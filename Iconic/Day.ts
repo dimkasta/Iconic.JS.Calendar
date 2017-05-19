@@ -22,9 +22,5 @@ namespace Iconic {
             this.Date = this._date.getDate();
             this.Day = this._date.getDay();
         }
-
     }
-
-    //var mm = new Day(2017, 5, 19);
-    //console.log(mm);
 }

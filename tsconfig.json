@@ -1,6 +1,14 @@
 {
   "compilerOptions": {
     "sourceMap": true,
-    "outFile": "IconicCalendar.js"
-  }
+    "outFile": "IconicCalendar.js",
+    "removeComments": true,
+    "moduleResolution": "node"
+  },
+  "files": [
+    "Iconic/Day.ts",
+    "Iconic/Week.ts",
+    "Iconic/Month.ts",
+    "Test.ts"
+  ]
 }

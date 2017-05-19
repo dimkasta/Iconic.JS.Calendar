@@ -19,7 +19,7 @@ namespace Iconic {
             this.WeekStart = weekStart;
 
             this.Days = [];
-            var x: number;
+            let x: number;
             for (x = 0; x < 7; x++) {
                 this.Days.push(new Day(date.Year, date.Month, date.Date - this.GetDay(date) + x));
             }
@@ -29,7 +29,7 @@ namespace Iconic {
         GetDay(date: Day) {
             if (this.WeekStart == WeekStart.Monday) {
                 //Shift days
-                var day = date.Day - 1;
+                let day = date.Day - 1;
                 if (day == -1) {
                     day = 6;
                 }
@@ -40,8 +40,5 @@ namespace Iconic {
             }
         }
     }
-
-    var week = new Week(new Day(2017, 4, 1), WeekStart.Monday);
-    console.log(week);
 }
 
