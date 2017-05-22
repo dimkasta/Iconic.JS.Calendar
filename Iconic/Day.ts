@@ -12,9 +12,12 @@ namespace Iconic {
         ZeroBasedMonth: number;
         Year: number;
 
-        constructor(year: number, month: number, date: number) {
+        //Returns a new Day, or today
+        constructor(year?: number, month?: number, date?: number) {
             this._date = new Date();
-            this._date.setFullYear(year, month - 1, date);
+            if(year != null) {
+                this._date.setFullYear(year, month - 1, date);
+            }
             this.ZeroBasedMonth = this._date.getMonth();
             this.Month = this.ZeroBasedMonth + 1;
 

@@ -15,8 +15,12 @@ namespace Iconic {
         Days: Array<Day>;
 
         //Creates a week from a given date
-        constructor(date: Day, weekStart: WeekStart) {
+        constructor(weekStart: WeekStart, date?: Day) {
             this.WeekStart = weekStart;
+
+            if(date == null) {
+                date = new Day();
+            }
 
             this.Days = [];
             let x: number;

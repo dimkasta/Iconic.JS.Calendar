@@ -1,8 +1,19 @@
+///<reference path="Iconic/CalendarService.ts"/>
+import CalendarService = Iconic.CalendarService;
 /**
  * Created by DKASTANI on 19/5/2017.
  */
 
-///<reference path="Iconic/Calendar.ts"/>
+///<reference path="Iconic/CalendarService.ts"/>
 
-let month: Month = new Month(new Day(2017, 4, 19), WeekStart.Monday );
-console.log(month.Weeks[1]);
+let today = CalendarService.Today();
+console.log(today);
+
+let date = CalendarService.GetDay(2017,4,20);
+console.log(date);
+
+let thisWeek = CalendarService.GetWeek(WeekStart.Monday);
+console.log(thisWeek);
+
+let week = CalendarService.GetWeek(WeekStart.Monday, date );
+console.log(week);
