@@ -20,7 +20,6 @@ namespace Iconic {
             }
             this.ZeroBasedMonth = this._date.getMonth();
             this.Month = this.ZeroBasedMonth + 1;
-
             this.Year = this._date.getFullYear();
             this.Date = this._date.getDate();
             this.Day = this._date.getDay();

@@ -17,7 +17,6 @@ namespace Iconic {
 
         static Today()
         {
-            //let today = new Date();
             return new Day();
         }
 

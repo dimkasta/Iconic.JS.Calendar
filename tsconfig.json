@@ -6,9 +6,9 @@
     "moduleResolution": "node"
   },
   "files": [
-    "Iconic/Day.ts",
-    "Iconic/Week.ts",
-    "Iconic/Month.ts",
-    "Test.ts"
+    "Iconic/Day.ts"
+    ,"Iconic/Week.ts"
+    ,"Iconic/Month.ts"
+    ,"Test.ts"
   ]
 }
