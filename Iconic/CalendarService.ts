@@ -25,5 +25,9 @@ namespace Iconic {
         static GetWeek(weekstart: WeekStart, date?: Day) {
             return new Week(weekstart, date);
         }
+
+        static GetMonth(weekstart: WeekStart, date?: Day) {
+            return new Month(weekstart, date);
+        }
     }
 }

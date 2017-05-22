@@ -7,13 +7,19 @@ import CalendarService = Iconic.CalendarService;
 ///<reference path="Iconic/CalendarService.ts"/>
 
 let today = CalendarService.Today();
-console.log(today);
+//console.log(today);
 
 let date = CalendarService.GetDay(2017,4,20);
 console.log(date);
 
 let thisWeek = CalendarService.GetWeek(WeekStart.Monday);
-console.log(thisWeek);
+//console.log(thisWeek);
 
 let week = CalendarService.GetWeek(WeekStart.Monday, date );
-console.log(week);
+//console.log(week);
+
+let month = CalendarService.GetMonth(WeekStart.Monday);
+//console.log(month.Weeks[0]);
+
+let amonth = CalendarService.GetMonth(WeekStart.Monday, date);
+console.log(amonth.Weeks[0]);
